@@ -13,7 +13,7 @@ const Contents = ({handleSelect}) => {
             .then(data => setCourses(data))
     },[])
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {
                 Courses.map((course, idx) => (
                     <Content key={idx} course={course} handleSelect={handleSelect}></Content>
